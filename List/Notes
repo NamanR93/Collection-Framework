@@ -14,7 +14,7 @@
 -- Vector(): It creates an empty vector with an initial capacity of 10.
 -- Vector(int initialCapacity): It creates an empty vector with the specified initial capacity.
 -- Vector(int initialCapacity, int capacityIncrement): It creates an empty vector with the specified initial capacity and capacity increment.
--- Vector(Collection<? extends E> c): It creates a vector containing the elements of the specified  collection
+-- Vector (Collection<? extends E> c): It creates a vector containing the elements of the specified  collection
 
 
 # Methods in Vector:
@@ -29,3 +29,20 @@
 -- isEmpty()
 -- contains(Object o)
 -- clear()
+
+
+
+# Stack:
+
+-- works on the principal LIFO (Last in first out)
+-- Since it extends Vector, it is synchronized, making it thread-safe.
+-- we can use LinkedList as stack.
+
+#CopyonWriteArrayList:
+
+-- It means whenever there is write operation, like adding or removing an element innstead of directly modifying the existing list,
+-- a new copy of list is created, and the modification is applied to that copy
+-- This ensures that the other threads reading the list while its being modified are unaffected.
+
+-- Write: A new copy of the list is created for every modification.
+          The reference to the list is then updated so that subsequent reads use this new list.

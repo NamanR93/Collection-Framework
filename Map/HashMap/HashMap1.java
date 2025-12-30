@@ -25,8 +25,22 @@ public class HashMap1 {
     // now if we want to run a loop we have to create set
 
     // Set<Integer> keys = map.keySet();
+    // OR
+    // Note: Use the keySet() method if you only want the keys, and use the values()
+    // method if you only want the values:
+
+    // print keys
     for (int i : map.keySet()) {
-      System.out.println(map.get(i));
+      System.out.println(i);
+    }
+    // print values
+    for (String i : map.values()) {
+      System.out.println(i);
+    }
+
+    // print keys and values
+    for (int i : map.keySet()) {
+      System.out.println("keys: " + i + " value: " + map.get(i));
     }
 
     // another way

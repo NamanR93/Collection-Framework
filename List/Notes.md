@@ -64,7 +64,7 @@ TO Retrieve the data we use cursors. there r types of cursors
 1. .iterator() method ------ .listIterator() method
 2. can us used with any collection object ---------only used with the List implemented classes
 3. has 3 methods: hasNext(), next(), remove() --------it has 3 + hasPrevious(), previous(), set()
-4.we can ready and remove using iterator -----------we can read, remove, replace and add the elements.
+4. we can ready and remove using iterator -----------we can read, remove, replace and add the elements.
 
 
 # Enumeration: can only be used with legacy classes i.e, Vector and Stack.
@@ -133,6 +133,9 @@ The underline data structure of linked list is: " doubly linked list" or "circul
 - works on the principal LIFO (Last in first out)
 - Since it extends Vector, it is synchronized, making it thread-safe.
 - we can use LinkedList as stack.
+- It methods are push, pop and peek.
+- It can be implemented on the basis of arrays, ArrayList, LinkedList or vector.
+- In arraylist front is bottom , end is top whereas in Linkedlist front is top and end is bottom for them to be stack. 
 
 #CopyonWriteArrayList:
 

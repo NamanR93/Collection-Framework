@@ -87,7 +87,11 @@ The underline data structure of linked list is: " doubly linked list" or "circul
 - it follows the insertion order.
 - Insertion and deletion operations are efficient and fast.
 - we can traverse from both front and backwrd direction.
--- 
+
+# ArrayList VS Vector
+
+- ArrayList: new capacity: (old * 3)/2 + 1, it doesnt provide any method to find the capacity
+- Vector: new = (old * 2): it provide a method which is:  int capacity();
       
 
 # Vector:
@@ -125,7 +129,7 @@ The underline data structure of linked list is: " doubly linked list" or "circul
 
 
 # Stack:
-
+- It is also a legacy class.
 - works on the principal LIFO (Last in first out)
 - Since it extends Vector, it is synchronized, making it thread-safe.
 - we can use LinkedList as stack.

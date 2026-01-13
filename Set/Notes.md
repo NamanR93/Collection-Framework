@@ -11,7 +11,7 @@
 ## HashSet:
 - It contains unique element.
 - It does not care about order
-- Now we  can use methods like add(), contains(), and remove() to manage your collection of unique elements.
+- Now we  can use methods like add(), contains(), and remove() to manage your collection of unique elements. All take O(1).
 
 ## Tip: Use HashSet when you care about speed, and TreeSet when you need sorted elements.
 
@@ -28,4 +28,7 @@
 ## LinkedHashSet
 
 - Tip: Use LinkedHashSet when you want a set that does not allow duplicates and keeps the original insertion order.
--  The elements will appear in the order they were added
+-  The elements will appear in the order they were added( cuz of doubly linked list)
+
+- HashSet & LinkedHashSet allow null at key, TreeSet not.
+- Hashset- random, LinkedHashset- insertion order, Tree- sorted order
